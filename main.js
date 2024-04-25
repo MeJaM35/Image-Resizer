@@ -12,7 +12,7 @@ function main() {
     });
 // open dev tools in dev mode
 if(isDev){
-  main.webContent.openDevTools();
+  mainWindow.webContents.openDevTools();
 }
     mainWindow.loadFile(path.join(__dirname, './renderer/index.html'));
 }
